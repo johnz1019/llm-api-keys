@@ -55,6 +55,41 @@ x-ratelimit-reset: 1777369440
 
 `finish_reason: length` means `max_tokens: 200` truncated the response. Increase `max_tokens` for complete answers.
 
+## Backup Models
+
+Use the same request body and replace the `model` field with one of these model IDs:
+
+```text
+MiniMaxAI/MiniMax-M2.5
+google/gemma-4-31B-it
+openai/gpt-oss-20b
+meta-llama/Llama-3.2-11B-Vision-Instruct
+```
+
+Example:
+
+```bash
+curl -sS -D - --location "$BITDEER_BASE_URL/chat/completions" \
+  --header "Authorization: Bearer $BITDEER_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "model": "MiniMaxAI/MiniMax-M2.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with only: ok"
+      }
+    ],
+    "max_tokens": 128,
+    "top_p": 1.0,
+    "temperature": 0.0,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 0,
+    "stream": false
+  }'
+```
+
 ## Response Example
 
 ```json
@@ -84,4 +119,3 @@ x-ratelimit-reset: 1777369440
   }
 }
 ```
-
