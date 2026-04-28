@@ -10,6 +10,23 @@ Verified curl examples for several LLM provider APIs.
 - `deepseek-v4-api.md`: DeepSeek V4 OpenAI-compatible API examples.
 - `glm-51-api.md`: GLM-5.1 OpenAI-compatible API example.
 - `.env.example`: Environment variable template.
+- `scripts/test_llm_endpoints.py`: Smoke test for the self-hosted llm2api relay targets: Kimi K2.7, Qwen3.6-27B, Gemma 4, Llama 3.1, and GPT-OSS.
+
+## Test API Endpoints
+
+```bash
+cp .env.example .env
+# Fill in LLM2API_API_KEY or the model-specific API key variables.
+python3 scripts/test_llm_endpoints.py
+```
+
+Run one target only:
+
+```bash
+python3 scripts/test_llm_endpoints.py --target qwen3.6-27b
+```
+
+The script prints a compact pass/fail table and never prints API key values.
 
 ## Vast.ai Deployment Scripts
 
