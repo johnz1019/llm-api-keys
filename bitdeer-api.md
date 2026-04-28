@@ -64,6 +64,7 @@ MiniMaxAI/MiniMax-M2.5
 google/gemma-4-31B-it
 openai/gpt-oss-20b
 meta-llama/Llama-3.2-11B-Vision-Instruct
+moonshotai/Kimi-K2.6
 ```
 
 Example:
