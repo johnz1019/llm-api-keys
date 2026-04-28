@@ -8,6 +8,7 @@ Verified curl examples for several LLM provider APIs.
 - `qwen36-27b-api.md`: Qwen3.6-27B OpenAI-compatible API examples.
 - `gemini-25-flash-api.md`: Gemini 2.5 Flash Generate Content example.
 - `deepseek-v4-api.md`: DeepSeek V4 OpenAI-compatible API examples.
+- `glm-51-api.md`: GLM-5.1 OpenAI-compatible API example.
 - `.env.example`: Environment variable template.
 
 ## Setup
@@ -21,4 +22,3 @@ Then fill in real API keys in `.env`.
 ## Safety
 
 `.env` is ignored by git and should not be committed. The Markdown docs use environment variables instead of hard-coded secrets.
-
