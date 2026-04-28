@@ -9,6 +9,7 @@ Verified curl examples for several LLM provider APIs.
 - `gemini-25-flash-api.md`: Gemini 2.5 Flash Generate Content example.
 - `deepseek-v4-api.md`: DeepSeek V4 OpenAI-compatible API examples.
 - `glm-51-api.md`: GLM-5.1 OpenAI-compatible API example.
+- `bitdeer-api.md`: Bitdeer OpenAI-compatible API example and rate-limit headers.
 - `.env.example`: Environment variable template.
 
 ## Vast.ai Deployment Scripts
