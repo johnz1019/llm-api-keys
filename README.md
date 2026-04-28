@@ -11,6 +11,19 @@ Verified curl examples for several LLM provider APIs.
 - `glm-51-api.md`: GLM-5.1 OpenAI-compatible API example.
 - `.env.example`: Environment variable template.
 
+## Vast.ai Deployment Scripts
+
+- `vast/qwen3.6-27b/`: Qwen3.6-27B vLLM + DFlash setup scripts and runbook.
+- `vast/gemma-4/`: Gemma 4 vLLM setup script and runbook.
+- `vast/llama-3.1/`: Llama 3.1 vLLM setup script and runbook.
+- `vast/gpt-oss/`: GPT-OSS vLLM setup script and runbook.
+
+Run model setup scripts with a Hugging Face token in the environment:
+
+```bash
+HF_TOKEN=<huggingface-token> ./vast/qwen3.6-27b/setup-vllm-dflash.sh Vast001
+```
+
 ## Setup
 
 ```bash
